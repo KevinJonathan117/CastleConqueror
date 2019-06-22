@@ -1,19 +1,11 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include<string>
-<<<<<<< HEAD
-#include"MainMenu.h"
-=======
 #include "Object.h"
->>>>>>> updated the file as of 22 june
 
 class Game
 {
 protected:
-<<<<<<< HEAD
-	MainMenu menu;
-	sf::RenderWindow myWindow;
-=======
 	//general
 	sf::RenderWindow myWindow;
 
@@ -37,7 +29,6 @@ protected:
 
 	int gameState = 0;
 
->>>>>>> updated the file as of 22 june
 	void ProcessEvent()
 	{
 		sf::Event event;
@@ -46,8 +37,6 @@ protected:
 			if (event.type == sf::Event::Closed)
 			{
 				myWindow.close();
-<<<<<<< HEAD
-=======
 			}
 			if (gameState == 0) // main menu
 			{
@@ -144,37 +133,10 @@ protected:
 
 			}
 			else if (gameState == 4) {
->>>>>>> updated the file as of 22 june
 
 			}
 		}
 	}
-<<<<<<< HEAD
-
-
-public:
-	Game() 
-	{
-		
-	}
-
-	
-	void Run()
-	{
-	
-		while (myWindow.isOpen())
-		{
-			
-			ProcessEvent();
-		
-		
-		}
-		menu.Run();
-	}
-	void setGameState(int _gameState)
-	{
-	
-=======
 	void Update()
 	{
 		if (gameState == 0) // main menu
@@ -276,6 +238,5 @@ public:
 	void setGameState(int _gameState)
 	{
 		gameState = _gameState;
->>>>>>> updated the file as of 22 june
 	}
 };
